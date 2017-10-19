@@ -10,3 +10,7 @@ void Game::startGame() {
 
 	return;
 }
+
+void Game::setupDictionary() {
+	return;
+}
