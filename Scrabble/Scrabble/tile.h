@@ -2,7 +2,7 @@
 
 
 
-class tile {
+class Tile {
 public:
 	bool isEmpty();  // does it have a letter on it?
 

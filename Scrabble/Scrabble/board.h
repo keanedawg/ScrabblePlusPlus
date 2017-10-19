@@ -3,9 +3,10 @@
 #include "tile.h"
 
 
-class board {
+class Board {
 private:
+	Tile tiles[19][19];
 
 public:
-	void startGame();
+	
 };
