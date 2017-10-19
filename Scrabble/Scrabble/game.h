@@ -5,12 +5,15 @@
 #include <string>
 #include <vector>
 #include "board.h"
+#include <fstream>
+
+using namespace std;
 
 
 class Game {
 private:
 	Board board;
-	unordered_map<string, bool> isValid;
+	unordered_map<string, bool> dictionary;
 	vector<char> letterBag;
 
 	void setupDictionary();
