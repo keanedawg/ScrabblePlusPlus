@@ -17,10 +17,9 @@ private:
 	vector<char> letterBag;
 
 	void setupDictionary();
-
+	int turn;
 
 public:
 	void startGame();
-
 
 };

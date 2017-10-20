@@ -5,7 +5,7 @@
 class Tile {
 public:
 	bool isEmpty();  // does it have a letter on it?
-
+	int addLetter(char letter);
 
 
 private:
