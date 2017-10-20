@@ -8,5 +8,5 @@ private:
 	Tile tiles[19][19];
 
 public:
-	
+	void printBoard();
 };
