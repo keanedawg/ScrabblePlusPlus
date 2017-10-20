@@ -15,11 +15,18 @@ private:
 	Board board;
 	unordered_map<string, bool> dictionary;
 	vector<char> letterBag;
-
-	void setupDictionary();
 	int turn;
 
-public:
-	void startGame();
+	void promptMove();
+	void printHelp();
+	void play();
+	void setupDictionary();
+	
 
+public:
+	Game() : gameFinished(false) {}
+	void startGame();
+	
+
+	bool gameFinished;
 };

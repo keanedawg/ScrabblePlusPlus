@@ -12,13 +12,25 @@ void Game::startGame() {
 }
 
 // Main Game Loop
-void play() {
+void Game::play() {
+	while (!this->gameFinished) {
+		promptMove();
+	}
+}
 
+// Main Game Loop
+void Game::printHelp() {
+	cout << "Here are all the possible commands:\n"
+		 << "h - Help\n"
+		 << "c - check if word is valid\n"
+		 << "m - enter a move\n";
 }
 
 // Reads the Dictionary Text File and enters values to the hashmap
 void Game::setupDictionary() {
-	ifstream fin("dictionary.txt");
+	// Use dictionary.txt for real game, tinydict for quick debugging.
+//	ifstream fin("dictionary.txt");  
+	ifstream fin("tinydict.txt");
 	std::string word;
 
 	while (fin >> word) {
