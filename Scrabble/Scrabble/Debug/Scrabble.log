@@ -1,14 +1,8 @@
 ﻿  tile.cpp
-c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\tile.cpp(6): error C2059: syntax error: '}'
-  game.cpp
-  Board.cpp
-c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\board.cpp(10): error C2059: syntax error: 'return'
-  Generating Code...
-  Compiling...
   main.cpp
-c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\main.cpp(8): error C2280: 'Game::Game(void)': attempting to reference a deleted function
-  c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(25): note: compiler has generated 'Game::Game' here
-  c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(25): note: 'Game::Game(void)': function was implicitly deleted because a data member invokes a deleted or inaccessible function 'Board::Board(void)'
-  c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\board.h(12): note: 'Board::Board(void)': function was implicitly deleted because a data member 'Board::tiles' has either no appropriate default constructor or overload resolution was ambiguous
-  c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\board.h(8): note: see declaration of 'Board::tiles'
+  Board.cpp
+c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\board.cpp(7): error C2065: 'print': undeclared identifier
+c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\board.cpp(8): error C2143: syntax error: missing ';' before '}'
   Generating Code...
+  Skipping... (no relevant changes detected)
+  game.cpp

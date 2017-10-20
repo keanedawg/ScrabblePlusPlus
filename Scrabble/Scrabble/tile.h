@@ -4,7 +4,9 @@
 
 class Tile {
 public:
-	Tile(char type) : type(type) {}
+	Tile() : type(' '), letter(' ') {}
+	Tile(char type) : type(type), letter(' ') {}
+	Tile(char type, char letter) : type(type), letter(letter) {}
 
 	inline bool isEmpty() { return letter == ' '; }  // does it have a letter on it?
 	inline void addLetter(char letter) { this->letter = letter; };

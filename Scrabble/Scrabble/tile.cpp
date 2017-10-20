@@ -2,5 +2,11 @@
 
 
 char Tile::print() {
-	if 
+	if (this->letter == ' ') {
+		if (this->type == ' ') {
+			return '_';
+		}
+		return this->type;
+	}
+	return this->letter;
 }
