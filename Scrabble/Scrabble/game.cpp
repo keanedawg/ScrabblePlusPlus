@@ -23,7 +23,9 @@ void Game::printHelp() {
 	cout << "Here are all the possible commands:\n"
 		 << "h - Help\n"
 		 << "c - check if word is valid\n"
-		 << "m - enter a move\n";
+		 << "m - enter a move\n"
+		 << "q - quit\n"
+		 << "s - skip turn\n";
 }
 
 // Reads the Dictionary Text File and enters values to the hashmap
