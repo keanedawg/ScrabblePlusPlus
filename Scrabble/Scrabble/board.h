@@ -5,8 +5,9 @@
 
 class Board {
 private:
-	Tile tiles[19][19];
+	Tile tiles[15][15];
 
 public:
 	void printBoard();
+	Board();
 };

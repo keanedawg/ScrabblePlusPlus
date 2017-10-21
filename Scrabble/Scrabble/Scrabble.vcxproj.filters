@@ -49,5 +49,11 @@
     <Text Include="output.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="tinydict.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="syntax.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
