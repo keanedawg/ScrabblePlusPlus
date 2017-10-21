@@ -14,7 +14,7 @@ void Game::startGame() {
 // Main Game Loop
 void Game::play() {
 	while (!this->gameFinished) {
-		promptMove();
+//		promptMove();
 	}
 }
 

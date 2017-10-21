@@ -1,6 +1,3 @@
-﻿  main.cpp
-  game.cpp
-  Board.cpp
-  Generating Code...
-game.obj : error LNK2019: unresolved external symbol "private: void __thiscall Game::promptMove(void)" (?promptMove@Game@@AAEXXZ) referenced in function "private: void __thiscall Game::play(void)" (?play@Game@@AAEXXZ)
-C:\Users\camer\Git\ScrabblePlusPlus\Scrabble\Debug\Scrabble.exe : fatal error LNK1120: 1 unresolved externals
+﻿  game.cpp
+  Scrabble.vcxproj -> C:\Users\camer\Git\ScrabblePlusPlus\Scrabble\Debug\Scrabble.exe
+  Scrabble.vcxproj -> C:\Users\camer\Git\ScrabblePlusPlus\Scrabble\Debug\Scrabble.pdb (Partial PDB)

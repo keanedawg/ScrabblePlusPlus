@@ -2,7 +2,7 @@
 
 class Player {
 public:
-	void playTurn();
+	//void playTurn();
 
 
 private:

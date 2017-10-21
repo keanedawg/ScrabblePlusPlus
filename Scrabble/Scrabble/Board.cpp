@@ -1,4 +1,4 @@
-#include "game.h"
+#include "board.h"
 
 /*Initializes the board setting up all of the special letters. 
   All letters are assumed to be empty char and no type by default,
@@ -17,8 +17,8 @@ Board::Board() {
 }
 
 void Board::printBoard() {
-	for (int i = 0; i < 19; i++) {
-		for (int j = 0; j < 19; j++) {
+	for (int i = 0; i < size; i++) {
+		for (int j = 0; j < size; j++) {
 			cout << tiles[i][j].print() << " ";
 		}
 		cout << "\n";
