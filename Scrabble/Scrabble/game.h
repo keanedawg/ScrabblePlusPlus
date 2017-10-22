@@ -4,6 +4,7 @@
 #include <unordered_map>
 #include <string>
 #include <vector>
+#include <algorithm>
 #include "board.h"
 #include <fstream>
 
@@ -19,6 +20,7 @@ private:
 
 	char promptMove();
 	void printHelp();
+	bool isValidWord(const string &word);
 	void play();
 	void setupDictionary();
 	

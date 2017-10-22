@@ -6,7 +6,7 @@ using namespace std;
 // Sets up all initial objects then
 void Game::startGame() {
 	cout << "Scrable has started\n";
-//	setupDictionary();
+	setupDictionary();
 	board.printBoard();
 	play();
 	return;
@@ -16,18 +16,30 @@ void Game::startGame() {
 void Game::play() {
 	while (!this->gameFinished) {
 		char move = promptMove();
-		switch (move) {
+		
+	switch (move) {
 		case 'h':
-			cout << "help";
+			printHelp();
 			break;
 		case 'c':
-			cout << "check";
+			{
+				string word;
+				cin >> word;
+				transform(word.begin(), word.end(), word.begin(), toupper);
+				if (isValidWord(word)) {
+					cout << word << " is a valid Scrabble word.\n";
+				}
+				else {
+					cout << word << " is NOT a valid Scrabble word.\n";
+				}
+			}
 			break;
 		case 'm':
 			cout << "move";
 			break;
 		case 'q':
-			cout << "quit";
+			this->gameFinished = true;
+			cout << "Quitting the game.\n";
 			break;
 		case 's':
 			cout << "skip turn";
@@ -37,6 +49,11 @@ void Game::play() {
 			break;
 		}
 	}
+	cout << "Thank you for playing!\n";
+}
+
+bool Game::isValidWord(const string & word) {
+	return dictionary.count(word) == 1;
 }
 
 // Main Game Loop
