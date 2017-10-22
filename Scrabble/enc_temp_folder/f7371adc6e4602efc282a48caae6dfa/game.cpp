@@ -33,7 +33,7 @@ void Game::play() {
 			cout << "skip turn";
 			break;
 		default:
-			cout << "Invalid Command Entered, please enter 'h' to get a list of available commands.\n";
+			cout << "Invalid Command Entered, please enter 'h' to get a list of available commands.";
 			break;
 		}
 	}

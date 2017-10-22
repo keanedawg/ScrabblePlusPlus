@@ -17,7 +17,7 @@ private:
 	vector<char> letterBag;
 	int turn;
 
-//	void promptMove();
+	char promptMove();
 	void printHelp();
 	void play();
 	void setupDictionary();
