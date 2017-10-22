@@ -1,7 +1,5 @@
 #pragma once
 
-
-
 class Tile {
 public:
 	Tile() : type(' '), letter(' ') {}
