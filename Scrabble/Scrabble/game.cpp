@@ -6,6 +6,7 @@ using namespace std;
 // Sets up all initial objects then
 void Game::startGame() {
 	cout << "Scrable has started\n";
+	setPlayers();
 	setupDictionary();
 	board.printBoard();
 	play();
@@ -91,7 +92,7 @@ void Game::setupDictionary() {
 void Game::setPlayers() {
 	int players = 0;
 	cout << "Please enter the number of people playing: ";
-	while (players > 1 && players < 5) {
+	while (players < 2 || players > 4) {
 		cin >> players;
 		if (players < 2 || players > 4) {
 			cout << "Scrabble rules require there to be 2-4 players\n";
