@@ -87,3 +87,16 @@ void Game::setupDictionary() {
 
 	fin.close();
 }
+
+void Game::setPlayers() {
+	int players = 0;
+	cout << "Please enter the number of people playing: ";
+	while (players > 1 && players < 5) {
+		cin >> players;
+		if (players < 2 || players > 4) {
+			cout << "Scrabble rules require there to be 2-4 players\n";
+			cout << "Please enter the number of people playing: ";
+		}
+	}
+	this->players = players;
+}

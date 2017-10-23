@@ -17,8 +17,10 @@ private:
 	unordered_map<string, bool> dictionary;
 	vector<char> letterBag;
 	int turn;
+	int players;
 
 	char promptMove();
+	void setPlayers();
 	void printHelp();
 	bool isValidWord(const string &word);
 	void play();
