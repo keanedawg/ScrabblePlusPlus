@@ -111,6 +111,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BagSetup.cpp" />
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="BoardSetup.cpp" />
     <ClCompile Include="game.cpp" />
