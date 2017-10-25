@@ -16,41 +16,53 @@ void Game::startGame() {
 // Main Game Loop
 void Game::play() {
 	while (!this->gameFinished) {
+		for (int i = 1; i <= players; i++) {
+			cout << "Player " << i << ", it is your move\n";
+			cout << playTurn() << '\n';
+		}
+	}
+	cout << "Thank you for playing!\n";
+}
+
+int Game::playTurn() {
+	bool endturn = false;
+	while (!endturn) {
 		char move = promptMove();
-		
-	switch (move) {
+		switch (move) {
 		case 'h':
 			printHelp();
 			break;
 		case 'c':
-			{
-				string word;
-				cin >> word;
-				transform(word.begin(), word.end(), word.begin(), toupper);
-				if (isValidWord(word)) {
-					cout << word << " is a valid Scrabble word.\n";
-				}
-				else {
-					cout << word << " is NOT a valid Scrabble word.\n";
-				}
+		{
+			string word;
+			cin >> word;
+			transform(word.begin(), word.end(), word.begin(), toupper);
+			if (isValidWord(word)) {
+				cout << word << " is a valid Scrabble word.\n";
 			}
-			break;
+			else {
+				cout << word << " is NOT a valid Scrabble word.\n";
+			}
+		}
+		break;
 		case 'm':
 			cout << "move";
 			break;
 		case 'q':
 			this->gameFinished = true;
 			cout << "Quitting the game.\n";
+			endturn = true;
 			break;
 		case 's':
-			cout << "skip turn";
+			cout << "Skipping turn";
+			endturn = true;
 			break;
 		default:
 			cout << "Invalid Command Entered, please enter 'h' to get a list of available commands.\n";
 			break;
 		}
 	}
-	cout << "Thank you for playing!\n";
+	return 0;
 }
 
 bool Game::isValidWord(const string & word) {

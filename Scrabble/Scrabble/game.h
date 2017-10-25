@@ -16,11 +16,13 @@ private:
 	Board board;
 	unordered_map<string, bool> dictionary;
 	vector<char> letterBag;
-	int turn;
+	int turns = 0;
+	int currentPlayer = 1;
 	int players;
 
 	char promptMove();
 	void setPlayers();
+	int playTurn(); // returns total number of points player scored
 	void printHelp();
 	bool isValidWord(const string &word);
 	void play();
