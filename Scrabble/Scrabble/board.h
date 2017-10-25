@@ -10,6 +10,6 @@ private:
 	Tile tiles[15][15];
 
 public:
-	void printBoard();
 	Board();
+	void printBoard();
 };
