@@ -17,9 +17,10 @@ void Game::startGame() {
 void Game::play() {
 	while (!this->gameFinished) {
 		for (int i = 1; i <= players; i++) {
-			cout << "Player " << i << ", it is your move\n";
+			cout << "TURN " << turns << ": Player " << i << ", it is your move\n";
 			cout << playTurn() << '\n';
 		}
+		turns++;
 	}
 	cout << "Thank you for playing!\n";
 }
