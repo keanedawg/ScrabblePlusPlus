@@ -55,12 +55,15 @@ int Game::playTurn() {
 				bool isDown;
 				char down;
 				cin >> x >> y >> word >> down;
+				down = tolower(down);
 				transform(word.begin(), word.end(), word.begin(), toupper);
 				// throws exception if any check fails.
 				checkCoordinate(x);
 				checkCoordinate(y);
 				isDown = getAndCheckIsDown(down);
 				checkWord(word);
+				board.addWord(x-1, y-1, word, isDown);
+				board.printBoard();
 				
 				endturn = true; // player finishes his turn
 			}
