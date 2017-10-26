@@ -47,7 +47,28 @@ int Game::playTurn() {
 		}
 		break;
 		case 'm':
-			cout << "move";
+		{
+			// should add checker to ensure syntax is all good.
+			try {
+				int x, y;
+				string word;
+				bool isDown;
+				char down;
+				cin >> x >> y >> word >> down;
+				transform(word.begin(), word.end(), word.begin(), toupper);
+				// throws exception if any check fails.
+				checkCoordinate(x);
+				checkCoordinate(y);
+				isDown = getAndCheckIsDown(down);
+				checkWord(word);
+				
+				endturn = true; // player finishes his turn
+			}
+			catch (const char * err) {
+				cout << "Input Error: " << err << "\n" << "Format is \"m <1-15> <1-15> <English Word> <'h' or 'v'>\"\n";
+			}
+			
+		}
 			break;
 		case 'q':
 			this->gameFinished = true;
@@ -100,6 +121,33 @@ void Game::setupDictionary() {
 	}
 
 	fin.close();
+}
+
+void Game::checkWord(const string & word) {
+	if (!isValidWord(word)) {
+		throw "Word given was not found in the dictionary.";
+	}
+}
+
+void Game::checkCoordinate(int x) {
+	if (x > 15 || x < 1) {
+		throw "X and/or Y coordinate are not valid. Must be between 1 to 15";
+	}
+}
+
+// Checkdown returns a bool 
+bool Game::getAndCheckIsDown(char down) {
+	bool isDown;
+	if (down == 'h') {
+		isDown = false;
+	}
+	else if (down == 'v') {
+		isDown = true;
+	}
+	else {
+		throw "Failed to specify whether the word is horizontal or vertical.";
+	}
+	return isDown;
 }
 
 void Game::setPlayers() {

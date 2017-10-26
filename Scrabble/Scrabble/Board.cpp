@@ -12,7 +12,12 @@ void Board::printBoard() {
 /*adds a word to the board. Returns the score back to the user. Returns -1 if word cannot be added.*/
 int Board::addWord(int x, int y, string word, bool isDown) {
 	for (int i = 0; i < word.length(); i++) {
-		tiles[x][y + i].addLetter(word[i]);
+		if (isDown) {
+			tiles[x][y+i].addLetter(word[i]);
+		}
+		else {
+			tiles[x+1][y].addLetter(word[i]);
+		}
 	}
 	return 0; // Remove later
 }

@@ -24,11 +24,16 @@ private:
 	void setPlayers();
 	int playTurn(); // returns total number of points player scored
 	void printHelp();
-	bool isValidWord(const string &word);
+	bool isValidWord(const string & word);
 	void play();
 	void setupDictionary();
 	void setupBag();
 	
+	// input checks
+	void checkCoordinate(int x) throw(const char*); 
+	bool getAndCheckIsDown(char down) throw (const char*);
+	void checkWord(const string & word) throw (const char*);
+
 
 public:
 	Game() : gameFinished(false) {}
