@@ -7,7 +7,6 @@ using namespace std;
 void Game::startGame() {
 	cout << "Scrable has started\n";
 	setup();
-
 	board.printBoard();
 	play();
 	return;
@@ -83,6 +82,10 @@ int Game::playTurn() {
 			cout << "Skipping turn";
 			endturn = true;
 			break;
+		case 'd':
+			system("cls");
+			board.printBoard();
+			break;
 		default:
 			cout << "Invalid Command Entered, please enter 'h' to get a list of available commands.\n";
 			break;
@@ -102,6 +105,7 @@ void Game::printHelp() {
 		 << "c - check if word is valid\n"
 		 << "m - enter a move\n"
 		 << "q - quit\n"
+		 << "d - clear screen\n"
 		 << "s - skip turn\n";
 }
 

@@ -1,6 +1,6 @@
 ﻿  game.cpp
-c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(33): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(34): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(35): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(38): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(39): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(40): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
   Scrabble.vcxproj -> C:\Users\camer\Git\ScrabblePlusPlus\Scrabble\Debug\Scrabble.exe
   Scrabble.vcxproj -> C:\Users\camer\Git\ScrabblePlusPlus\Scrabble\Debug\Scrabble.pdb (Partial PDB)
