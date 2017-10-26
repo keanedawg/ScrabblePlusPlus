@@ -9,3 +9,7 @@ void Board::printBoard() {
 	}
 }
 
+
+int Board::addWord(int start, bool isDown) {
+
+}

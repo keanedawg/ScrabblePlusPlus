@@ -12,4 +12,5 @@ private:
 public:
 	Board();
 	void printBoard();
+	int addWord(int start, bool isDown);
 };
