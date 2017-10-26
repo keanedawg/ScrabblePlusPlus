@@ -6,8 +6,8 @@ using namespace std;
 // Sets up all initial objects then
 void Game::startGame() {
 	cout << "Scrable has started\n";
-	setPlayers();
-	setupDictionary();
+	setup();
+
 	board.printBoard();
 	play();
 	return;

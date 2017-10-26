@@ -20,16 +20,21 @@ private:
 	int currentPlayer = 1;
 	int players;
 
+	unordered_map<char, int> scoreMap;
 	char promptMove();
 	void setPlayers();
 	int playTurn(); // returns total number of points player scored
 	void printHelp();
 	bool isValidWord(const string & word);
 	void play();
+
+	// Initial Configurations
+	void setup();
+	void setupScoreMap();
 	void setupDictionary();
 	void setupBag();
 	
-	// input checks
+	// Input Checks
 	void checkCoordinate(int x) throw(const char*); 
 	bool getAndCheckIsDown(char down) throw (const char*);
 	void checkWord(const string & word) throw (const char*);
