@@ -18,6 +18,8 @@ void Game::play() {
 	while (!this->gameFinished) {
 		for (int i = 1; i <= players; i++) {
 			cout << "TURN " << turns << ": Player " << i << ", it is your move\n";
+			system("cls");
+			board.printBoard();
 			cout << playTurn() << '\n';
 		}
 		turns++;
@@ -63,7 +65,6 @@ int Game::playTurn() {
 				isDown = getAndCheckIsDown(down);
 				checkWord(word);
 				board.addWord(x-1, y-1, word, isDown);
-				board.printBoard();
 				
 				endturn = true; // player finishes his turn
 			}
