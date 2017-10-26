@@ -30,7 +30,7 @@
     <ClCompile Include="BoardSetup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BagSetup.cpp">
+    <ClCompile Include="gameSetup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
