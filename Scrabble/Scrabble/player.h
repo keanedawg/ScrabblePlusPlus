@@ -7,13 +7,12 @@ class Player {
 public:
 	//void playTurn();
 	void printLetters();
-	void getNewLetters(int lettersToGet);
+	void getLetters(char letters[], int size);
 	bool hasLetter(char letter);
 
 
 private:
 	int letterCount = 7;
-	char myLetters[7] = { 'A', 'S', 'T', 'U', 'D', 'Y', 'G' };
+	int myLetters[27] = {};
 	int score = 0;
-
 };
