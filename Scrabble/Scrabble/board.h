@@ -3,6 +3,8 @@
 #include "tile.h"
 #include <iostream>
 #include <string>
+#include "player.h"
+
 using namespace std;
 
 class Board {
@@ -13,5 +15,5 @@ private:
 public:
 	Board();
 	void printBoard();
-	int addWord(int x, int y, string word, bool isDown);
+	int addWord(Player &p, int x, int y, string word, bool isDown);
 };

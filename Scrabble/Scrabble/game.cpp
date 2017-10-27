@@ -3,7 +3,7 @@
 using namespace std;
 
 
-// Sets up all initial objects then
+// Sets up all initial objects then plays the game
 void Game::startGame() {
 	cout << "Scrable has started\n";
 	setup();
@@ -25,6 +25,7 @@ void Game::play() {
 	}
 	cout << "Thank you for playing!\n";
 }
+
 
 int Game::playTurn(int player) {
 	bool endturn = false;
@@ -63,7 +64,7 @@ int Game::playTurn(int player) {
 				checkCoordinate(y);
 				isDown = getAndCheckIsDown(down);
 				checkWord(word);
-				board.addWord(x-1, y-1, word, isDown);
+				board.addWord(this->myPlayers[player], x-1, y-1, word, isDown);
 				
 				endturn = true; // player finishes his turn
 			}
@@ -97,6 +98,7 @@ int Game::playTurn(int player) {
 	return 0;
 }
 
+
 bool Game::isValidWord(const string & word) {
 	return dictionary.count(word) == 1;
 }
@@ -113,6 +115,7 @@ void Game::printHelp() {
 		 << "s - skip turn\n";
 }
 
+
 char Game::promptMove() {
 	char move;
 	cout << "What would you like to do: ";
@@ -120,12 +123,13 @@ char Game::promptMove() {
 	return tolower(move);
 }
 
-
+// Check Logic
 void Game::checkWord(const string & word) {
 	if (!isValidWord(word)) {
 		throw "Word given was not found in the dictionary.";
 	}
 }
+
 
 void Game::checkCoordinate(int x) {
 	if (x > 15 || x < 1) {

@@ -16,7 +16,7 @@ class Game {
 private:
 	Board board;
 	unordered_map<string, bool> dictionary;
-	vector<char> letterBag = vector<char>(26);
+	vector<char> letterBag = vector<char>(27);
 	int turns = 0;
 	int currentPlayer = 1;
 	int players;

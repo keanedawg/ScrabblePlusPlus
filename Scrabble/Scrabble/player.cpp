@@ -29,7 +29,5 @@ bool Player::hasLetter(char letter) {
 		// transform '*' into the proper letter it needs to be
 		return this->myLetters[26] > 0;
 	}
-	if (this->myLetters[letter - 'A'] > 0) {
-		return true;
-	}
+	return this->myLetters[letter - 'A'] > 0;
 }
