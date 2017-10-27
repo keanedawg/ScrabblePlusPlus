@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <string>
 using namespace std;
 
 class Player {
@@ -15,4 +16,5 @@ private:
 	int letterCount = 7;
 	int myLetters[27] = {0};
 	int score = 0;
+	string name;
 };

@@ -11,7 +11,6 @@ void Player::addLetters(char letters[], int size) {
 	}
 }
 
-
 void Player::printLetters() {
 	cout << "Your letters are: ";
 	for (int i = 0; i < 26; i++) {
@@ -28,9 +27,9 @@ void Player::printLetters() {
 bool Player::hasLetter(char letter) {
 	if ('*' == letter) {
 		// transform '*' into the proper letter it needs to be
-		letter = 'A' + 26;
+		return this->myLetters[26] > 0;
 	}
-	if (myLetters[letter - 'A'] > 0) {
+	if (this->myLetters[letter - 'A'] > 0) {
 		return true;
 	}
 }
