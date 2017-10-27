@@ -32,6 +32,12 @@ void Game::setPlayers() {
 		}
 	}
 	this->players = players;
+
+	char lettersToAdd[7] = { 'A', 'S', 'T', 'U', 'D', 'Y', 'C' };
+
+	for (int i = 0; i < players; i++) {
+		myPlayers[i].addLetters(lettersToAdd, 7);
+	}
 }
 
 // The bag is going to be just a counter full of frequencies of different letters	

@@ -1,19 +1,4 @@
-﻿  game.cpp
-c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(40): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(41): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(42): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-  Generating Code...
-  Compiling...
-  main.cpp
-c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(40): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(41): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(42): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-  gameSetup.cpp
-c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(40): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(41): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(42): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  Board.cpp
+﻿  player.cpp
+c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\player.cpp(36): warning C4715: 'Player::hasLetter': not all control paths return a value
   Scrabble.vcxproj -> C:\Users\camer\Git\ScrabblePlusPlus\Scrabble\Debug\Scrabble.exe
   Scrabble.vcxproj -> C:\Users\camer\Git\ScrabblePlusPlus\Scrabble\Debug\Scrabble.pdb (Partial PDB)

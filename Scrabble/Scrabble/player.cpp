@@ -1,12 +1,12 @@
 #include "player.h"
 
-void Player::getLetters(char letters[], int size) {
+void Player::addLetters(char letters[], int size) {
 	for (int i = 0; i < size; i++) {
 		if ('*' == letters[i]) {
-			letters[26]++;
+			this->myLetters[26]++;
 		}
 		else {
-			myLetters[letters[i] - 'A']++;
+			this->myLetters[letters[i] - 'A']++;
 		}
 	}
 }
@@ -15,8 +15,8 @@ void Player::getLetters(char letters[], int size) {
 void Player::printLetters() {
 	cout << "Your letters are: ";
 	for (int i = 0; i < 26; i++) {
-		for (int hits = 0; hits < myLetters[i]; hits++) {
-			cout << 'A' + i << ' ';
+		for (int hits = 0; hits < this->myLetters[i]; hits++) {
+			cout << (char)('A' + i) << ' ';
 		}
 	}
 	for (int hits = 0; hits < myLetters[26]; hits++) {

@@ -87,7 +87,7 @@ int Game::playTurn(int player) {
 			board.printBoard();
 			break;
 		case 'p':
-			myPlayers[player].printLetters();
+			myPlayers[player - 1].printLetters();
 			break;
 		default:
 			cout << "Invalid Command Entered, please enter 'h' to get a list of available commands.\n";
@@ -121,7 +121,6 @@ char Game::promptMove() {
 }
 
 
-
 void Game::checkWord(const string & word) {
 	if (!isValidWord(word)) {
 		throw "Word given was not found in the dictionary.";
@@ -147,17 +146,4 @@ bool Game::getAndCheckIsDown(char down) {
 		throw "Failed to specify whether the word is horizontal or vertical.";
 	}
 	return isDown;
-}
-
-void Game::setPlayers() {
-	int players = 0;
-	cout << "Please enter the number of people playing: ";
-	while (players < 2 || players > 4) {
-		cin >> players;
-		if (players < 2 || players > 4) {
-			cout << "Scrabble rules require there to be 2-4 players\n";
-			cout << "Please enter the number of people playing: ";
-		}
-	}
-	this->players = players;
 }
