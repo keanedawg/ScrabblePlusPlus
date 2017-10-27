@@ -6,6 +6,34 @@ void Game::setup() {
 	setupScoreMap();
 }
 
+// Reads the Dictionary Text File and enters values to the hashmap
+void Game::setupDictionary() {
+	// Use dictionary.txt for real game, tinydict for quick debugging.
+	//	ifstream fin("dictionary.txt");  
+	ifstream fin("tinydict.txt");
+	std::string word;
+
+	while (fin >> word) {
+		dictionary[word] = true;
+		cout << word << "\n";
+	}
+
+	fin.close();
+}
+
+void Game::setPlayers() {
+	int players = 0;
+	cout << "Please enter the number of people playing: ";
+	while (players < 2 || players > 4) {
+		cin >> players;
+		if (players < 2 || players > 4) {
+			cout << "Scrabble rules require there to be 2-4 players\n";
+			cout << "Please enter the number of people playing: ";
+		}
+	}
+	this->players = players;
+}
+
 // The bag is going to be just a counter full of frequencies of different letters	
 void Game::setupBag() {
 //	letterBag.push_back();

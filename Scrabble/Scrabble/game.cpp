@@ -120,20 +120,7 @@ char Game::promptMove() {
 	return tolower(move);
 }
 
-// Reads the Dictionary Text File and enters values to the hashmap
-void Game::setupDictionary() {
-	// Use dictionary.txt for real game, tinydict for quick debugging.
-//	ifstream fin("dictionary.txt");  
-	ifstream fin("tinydict.txt");
-	std::string word;
 
-	while (fin >> word) {
-		dictionary[word] = true;
-		cout << word << "\n";
-	}
-
-	fin.close();
-}
 
 void Game::checkWord(const string & word) {
 	if (!isValidWord(word)) {
