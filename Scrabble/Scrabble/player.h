@@ -11,7 +11,7 @@ public:
 
 
 private:
-	char myLetters[7] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g' };
-	int score;
+	char myLetters[7] = { 'A', 'S', 'T', 'U', 'D', 'Y', 'G' };
+	int score = 0;
 
 };
