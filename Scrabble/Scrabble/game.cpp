@@ -19,14 +19,14 @@ void Game::play() {
 			system("cls");
 			board.printBoard();
 			cout << "TURN " << turns << ": Player " << i << ", it is your move\n";
-			cout << playTurn() << '\n';
+			cout << playTurn(i) << '\n';
 		}
 		turns++;
 	}
 	cout << "Thank you for playing!\n";
 }
 
-int Game::playTurn() {
+int Game::playTurn(int player) {
 	bool endturn = false;
 	while (!endturn) {
 		char move = promptMove();
@@ -86,6 +86,9 @@ int Game::playTurn() {
 			system("cls");
 			board.printBoard();
 			break;
+		case 'p':
+			myPlayers[player].printLetters();
+			break;
 		default:
 			cout << "Invalid Command Entered, please enter 'h' to get a list of available commands.\n";
 			break;
@@ -104,6 +107,7 @@ void Game::printHelp() {
 		 << "h - Help\n"
 		 << "c - check if word is valid\n"
 		 << "m - enter a move\n"
+		 << "p - print your letters\n"
 		 << "q - quit\n"
 		 << "d - clear screen\n"
 		 << "s - skip turn\n";

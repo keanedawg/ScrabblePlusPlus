@@ -7,6 +7,7 @@
 #include <algorithm>
 #include "board.h"
 #include <fstream>
+#include "player.h"
 
 using namespace std;
 
@@ -19,11 +20,12 @@ private:
 	int turns = 0;
 	int currentPlayer = 1;
 	int players;
+	Player myPlayers[4];
 
 	unordered_map<char, int> scoreMap;
 	char promptMove();
 	void setPlayers();
-	int playTurn(); // returns total number of points player scored
+	int playTurn(int player); // returns total number of points player scored
 	void printHelp();
 	bool isValidWord(const string & word);
 	void play();
