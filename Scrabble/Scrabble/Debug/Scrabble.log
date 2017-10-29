@@ -1,2 +1,4 @@
-﻿  Scrabble.vcxproj -> C:\Users\camer\Git\ScrabblePlusPlus\Scrabble\Debug\Scrabble.exe
+﻿  Board.cpp
+c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\board.cpp(18): warning C4018: '<': signed/unsigned mismatch
+  Scrabble.vcxproj -> C:\Users\camer\Git\ScrabblePlusPlus\Scrabble\Debug\Scrabble.exe
   Scrabble.vcxproj -> C:\Users\camer\Git\ScrabblePlusPlus\Scrabble\Debug\Scrabble.pdb (Partial PDB)

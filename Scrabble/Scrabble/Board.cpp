@@ -16,16 +16,20 @@ int Board::addWord(Player &p, int x, int y, string word, bool isDown) {
 	}
 	
 	for (int i = 0; i < word.length(); i++) {
-		if (!p.hasLetter(word[i])) {
-			throw "Word cannot be created from available letters.";
-		}
-
+		
+		// set t at the beginning so I don't have to keep checking if isDown
+		Tile* t;
 		if (isDown) {
-			tiles[y+i][x].addLetter(word[i]);
+			t = &tiles[y + i][x];
 		}
 		else {
-			tiles[y][x+i].addLetter(word[i]);
+			t = &tiles[y][x + i];
 		}
+		// Check that user has letter or it's already on the board
+		if (!p.hasLetter(word[i]) && t->getLetter() != word[i]) {
+			throw "Word cannot be created from available letters.";
+		}
+		t->addLetter(word[i]);
 	}
 	return 0; // Remove later
 }

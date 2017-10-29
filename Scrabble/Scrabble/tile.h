@@ -8,6 +8,8 @@ public:
 
 	inline bool isEmpty() { return letter == ' '; }  // does it have a letter on it?
 	inline void addLetter(char letter) { this->letter = letter; };
+	inline char getLetter() { return letter; }
+	inline char getType() { return type; }
 	char print();
 
 private:
