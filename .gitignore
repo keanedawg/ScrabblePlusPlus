@@ -5,3 +5,5 @@
 *.db
 *.ilk
 *.exe
+*.pdb
+*.tlog
