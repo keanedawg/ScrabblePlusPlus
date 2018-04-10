@@ -1,0 +1,21 @@
+﻿  tile.cpp
+  player.cpp
+  main.cpp
+c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(49): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(50): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(51): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  game.cpp
+c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(49): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(50): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(51): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  BoardSetup.cpp
+  Board.cpp
+c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\board.cpp(27): warning C4018: '<': signed/unsigned mismatch
+  gameSetup.cpp
+c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(49): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(50): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.h(51): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  Generating Code...
+c:\users\camer\git\scrabbleplusplus\scrabble\scrabble\game.cpp(191): warning C4715: 'socketStuff': not all control paths return a value
+  Scrabble.vcxproj -> C:\Users\camer\Git\ScrabblePlusPlus\Scrabble\Debug\Scrabble.exe
+  Scrabble.vcxproj -> C:\Users\camer\Git\ScrabblePlusPlus\Scrabble\Debug\Scrabble.pdb (Partial PDB)
