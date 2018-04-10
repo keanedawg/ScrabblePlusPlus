@@ -1,1 +1,7 @@
 *.opendb
+*.ipch
+*.obj
+*.suo
+*.db
+*.ilk
+*.exe
