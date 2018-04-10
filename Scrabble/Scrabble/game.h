@@ -9,6 +9,14 @@
 #include <fstream>
 #include "player.h"
 
+
+
+#include <windows.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <stdlib.h>
+#include <stdio.h>
+
 using namespace std;
 
 
