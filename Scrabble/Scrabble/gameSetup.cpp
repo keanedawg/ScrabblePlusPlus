@@ -22,7 +22,10 @@ void Game::setupDictionary() {
 }
 
 void Game::setPlayers() {
-	int players = 0;
+
+	// TO DO: add more players.
+	// Disabled for now while starting to use networking.
+ 	/*int players = 0;
 	cout << "Please enter the number of people playing: ";
 	while (players < 2 || players > 4) {
 		cin >> players;
@@ -31,11 +34,12 @@ void Game::setPlayers() {
 			cout << "Please enter the number of people playing: ";
 		}
 	}
-	this->players = players;
+	this->players = players;*/
+	this->players = 2;
 
 	char lettersToAdd[7] = { 'A', 'S', 'T', 'U', 'D', 'Y', 'C' };
 
-	for (int i = 0; i < players; i++) {
+	for (int i = 0; i < this->players; i++) {
 		myPlayers[i].addLetters(lettersToAdd, 7);
 	}
 }

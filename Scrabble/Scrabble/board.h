@@ -15,5 +15,6 @@ private:
 public:
 	Board();
 	void printBoard();
+	void sendBoard();
 	int addWord(Player &p, int x, int y, string word, bool isDown);
 };
